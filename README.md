@@ -157,6 +157,7 @@ Using Mistral 7B with HuggingFace Transformers:
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from superjsonmode.integrations.transformers import StructuredOutputForModel
 from pydantic import BaseModel
+import json
 
 device = "cuda"
 model = AutoModelForCausalLM.from_pretrained("mistralai/Mistral-7B-Instruct-v0.2").to(device)
